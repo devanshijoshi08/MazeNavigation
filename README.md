@@ -47,10 +47,12 @@ Dyna-Q:
 -	This variation displayed a quick learning curve with an immediate decrease in steps per episode, pointing to an effective strategy acquisition.
 -	There was a quick stabilization in the total rewards and a consistent average reward per step, showcasing the agent’s ability to efficiently navigate the maze.
 -	Excels with simulated planning, rapidly integrating portals and loops into its navigation strategy for effective maze traversal.
+
 Cross-Algorithm Comparison:
 -	SARSA and Dyna-Q variations with decaying rates (epsilon for SARSA and learning rate for Dyna-Q) showed a more exploratory early learning phase followed by an exploitation-focused approach, which was effective in maze navigation.
 -	Q-Learning's adaptability through a dynamic learning rate highlighted its robustness in achieving and maintaining high performance with less concern for the balance between exploration and exploitation, as opposed to the more nuanced approach in SARSA and Dyna-Q.
 -	Dyna-Q's incorporation of simulated experiences provided it with a unique advantage, allowing it to perform well despite less focus on exploration in the real environment compared to SARSA.
+
 Algorithm Selection:
 -	Dyna-Q's ability to adapt to mazes with unique features like portals and loops, coupled with its simulated experience planning, suggests a superior approach for complex navigation tasks.
 -	Overall, while each algorithm has its strengths, Dyna-Q’s dual approach of learning from both real and simulated experiences appeared to provide a slight edge in terms of speed and efficiency in learning the optimal policy for the maze navigation task.
